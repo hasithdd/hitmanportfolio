@@ -1,0 +1,98 @@
+body {
+    background-color: #121212;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0); /* Transparent black background */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* Style for the "Rulz" text on the left corner */
+.navbar-left {
+    float: left;
+    padding: 1vh 2vw; /* Adjust the padding based on your preference */
+    color: #ffffff; /* Red color */
+    font-family: 'Impact', sans-serif; /* Use Impact font or a similar bold font */
+    font-size: 4vh; /* Adjust the font size based on your preference */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Add some letter spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+}
+
+/* Style for the icons on the right corner */
+.navbar-right {
+    float: right;
+    padding: 1vh 2vw; /* Adjust the padding based on your preference */
+}
+
+/* Style for the social media icons */
+.social-icon {
+    font-size: 3vh; /* Adjust the font size based on your preference */
+    color: white;
+    text-decoration: none;
+    margin-left: 2vw; /* Adjust the margin based on your preference */
+    transition: transform 0.2s; /* Add a transition for smooth hover effect */
+    display: inline-block; /* Add this to allow transform to work */
+}
+
+/* Increase size on hover */
+.social-icon:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+}
+/* Style for the video background */
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire container */
+    z-index: -1;
+    filter: blur(10px);
+}
+/* Add styles for the unordered list */
+.menu-list {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0;
+    position: absolute;
+    left: 0; /* Remove the left padding for all screens */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+}
+
+/* Style for menu items */
+.menu-item {
+    display: block;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Add space between list items */
+    padding: 5px 10px;
+    text-align: center; /* Center text in list items */
+}
+
+/* Style for menu links */
+.menu-list a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style for menu links on hover */
+.menu-list a:hover {
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Add media query for left padding on larger screens */
+@media (min-width: 768px) {
+    .menu-list {
+        left: 100px; /* Add left padding for screens larger than 768px (adjust as needed) */
+    }
+}
+ 
